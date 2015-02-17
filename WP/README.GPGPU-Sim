@@ -1,1 +1,6 @@
-echo "10 ./data/" | ../../../bin/release/WP
+#!/bin/bash
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+#echo "10 ./data/" | ../../../bin/release/WP
+echo "10 ${DIR}/data/" | ${DIR}/../bin/release/WP 

@@ -6,12 +6,20 @@
 *.s
 
 bin/
-
+output/
 # Configuration
 
 gpgpusim.config
 *.icnt
 gpuwattch_*.xml
 
-
-
+CP/benchmarks/cp/build/
+WP/compare_snaps
+WP/libmassv.f90
+WP/module_mp_wsm5.f90
+WP/module_mp_wsm5.mod
+WP/wsm5.f.cu
+WP/wsm5.f.cu.cpp
+WP/wsm5_driver_vanilla
+WP/wsm5_gpu.f.cu
+WP/wsm5_gpu.f.cu.cpp
