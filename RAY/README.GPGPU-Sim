@@ -1,1 +1,5 @@
-../bin/release/RAY 256 256
+#!/bin/bash
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+${DIR}/../bin/release/RAY 256 256
