@@ -1,4 +1,8 @@
 #!/bin/bash
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+<<<<<<< HEAD
+=======
+
+>>>>>>> 118f746709edc1d057cab1fafef5cfe222617585
 ${DIR}/benchmarks/cp/build/cuda_short/cp

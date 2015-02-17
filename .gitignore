@@ -6,18 +6,27 @@
 *.a
 *.s
 
+<<<<<<< HEAD
 
 # binary and output folders
 bin/
 output/
+=======
+bin/
+output/
+# Configuration
+>>>>>>> 118f746709edc1d057cab1fafef5cfe222617585
 
 # config files
 gpgpusim.config
 *.icnt
 gpuwattch_*.xml
 
+<<<<<<< HEAD
 
 # generated files
+=======
+>>>>>>> 118f746709edc1d057cab1fafef5cfe222617585
 CP/benchmarks/cp/build/
 WP/compare_snaps
 WP/libmassv.f90

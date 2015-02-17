@@ -1,4 +1,9 @@
 #!/bin/bash
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+<<<<<<< HEAD
+=======
+
+#echo "10 ./data/" | ../../../bin/release/WP
+>>>>>>> 118f746709edc1d057cab1fafef5cfe222617585
 echo "10 ${DIR}/data/" | ${DIR}/../bin/release/WP 
