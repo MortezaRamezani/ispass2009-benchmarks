@@ -1,18 +1,23 @@
 # Morteza Made GitIgnore file
 
+# binary files
 *.o
 *.pyc
 *.a
 *.s
 
+
+# binary and output folders
 bin/
 output/
-# Configuration
 
+# config files
 gpgpusim.config
 *.icnt
 gpuwattch_*.xml
 
+
+# generated files
 CP/benchmarks/cp/build/
 WP/compare_snaps
 WP/libmassv.f90

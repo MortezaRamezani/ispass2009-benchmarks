@@ -1,5 +1,4 @@
 #!/bin/bash
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-
 ${DIR}/../bin/release/MUM ${DIR}/data/NC_003997.20k.fna ${DIR}/data/NC_003997_q25bp.50k.fna

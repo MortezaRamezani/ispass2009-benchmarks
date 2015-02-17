@@ -1,5 +1,4 @@
 #!/bin/bash
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-
 ${DIR}/../bin/release/AES  e 128 ${DIR}/data/output.bmp ${DIR}/data/key128.txt

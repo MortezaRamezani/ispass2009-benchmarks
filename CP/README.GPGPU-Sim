@@ -1,5 +1,4 @@
 #!/bin/bash
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-
 ${DIR}/benchmarks/cp/build/cuda_short/cp
