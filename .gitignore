@@ -1,0 +1,17 @@
+# Morteza Made GitIgnore file
+
+*.o
+*.pyc
+*.a
+*.s
+
+bin/
+
+# Configuration
+
+gpgpusim.config
+*.icnt
+gpuwattch_*.xml
+
+
+

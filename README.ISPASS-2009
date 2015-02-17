@@ -32,6 +32,10 @@ build/run them by doing the following:
 
 4. run "make -f Makefile.ispass-2009" in this directory. You should NOT need
    to copy or move any files for this to work.
+   if you faced this error:
+	#error -- unsupported GNU version! gcc 4.5 and up are not supported!
+   do this:
+	ln -s /usr/bin/gcc-4.X /usr/local/cuda/bin/gcc
 
 5. Verify binaries were generated for the benchmarks in ../bin/release/
    (relative to the directory this file located in)

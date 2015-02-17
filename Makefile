@@ -1,23 +1,28 @@
 # Please see README.ISPASS-2009 for instructions
 
+CC=gcc-4.4
+CXX=g++-4.4
+LOCAL_BOOST_LIB=
+LOCAL_BOOST_DIR=
+
 BINDIR:=$(shell pwd)/bin/
 BINSUBDIR=release
 SETENV=export BINDIR=$(BINDIR); \
 	   export ROOTDIR=$(NVIDIA_COMPUTE_SDK_LOCATION)/C/src/; \
 	   export BINSUBDIR=$(BINSUBDIR); \
-	   export BOOST_LIB=/usr/lib64; \
-	   export BOOST_ROOT=/usr/include; \
+	   export BOOST_LIB=/home/morteza/usr/local/lib; \
+	   export BOOST_ROOT=/home/morteza/usr/local/include; \
 	   export BOOST_VER=""; \
 	   export OPENMPI_BINDIR=/usr/lib64/mpi/gcc/openmpi/bin/; 
 noinline?=0
 
 .PHONY: check_environment
 default: check_environment common 
-	$(SETENV) make noinline=$(noinline) -C AES
+	#$(SETENV) make noinline=$(noinline) -C AES
 	$(SETENV) make noinline=$(noinline) -C BFS
 	cd CP; export PARBOIL_ROOT=`pwd`; cd common/src; make; cd -; ./parboil compile cp cuda_short; cp benchmarks/cp/build/cuda_short/cp $(BINDIR)/$(BINSUBDIR)/CP 
-	$(SETENV) make noinline=$(noinline) -C DG/3rdParty/ParMetis-3.1
-	$(SETENV) make noinline=$(noinline) -C DG
+	#$(SETENV) make noinline=$(noinline) -C DG/3rdParty/ParMetis-3.1
+	#$(SETENV) make noinline=$(noinline) -C DG
 	$(SETENV) make noinline=$(noinline) -C LIB
 	$(SETENV) make noinline=$(noinline) -C LPS
 	$(SETENV) make noinline=$(noinline) -C MUM
